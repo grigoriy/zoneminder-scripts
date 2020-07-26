@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+################################################################################
+# This script moves an auto-generated ZoneMinder event video.
+# It is intended to be called by a custom ZoneMinder filter
+# which may then delete the original event to save space.
+################################################################################
+
 LOG=/var/log/zoneminder/movevideo.log
 EXT=mp4
 VIDEO_DIR_NAME=video
