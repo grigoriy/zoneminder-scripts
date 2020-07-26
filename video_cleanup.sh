@@ -2,6 +2,7 @@
 
 ################################################################################
 # Removes Zoneminder event videos older than 1 month.
+# Supposed to be run daily via a cron job or systemd timer.
 ################################################################################
 
 VIDEO_DIR=$1
