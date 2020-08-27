@@ -8,4 +8,4 @@
 VIDEO_DIR=$1
 
 find $VIDEO_DIR -mtime +30 -type f -exec rm {} +
-find $VIDEO_DIR -mindepth 1 -mtime +30 -type d -empty -delete
+find $VIDEO_DIR -mindepth 1 -type d -atime +30 | xargs rmdir -p --ignore-fail-on-non-empty
